@@ -12,20 +12,30 @@ Mon programme, comme stipulé dans l'énoncé du problème (dont je n'ai plus ac
 En input une matrice d'adjacence aurait cette forme :
 
 P1
+
 55
 
 00001
+
 00010
+
 10000
+
 10001
+
 10000
+
 
 Le résultat du programme si on lui avait donné cet input serai : 
 
 0
+
 2 3 4
+
 1
+
 1,6
+
 
 L'interprétation générale de ce résultat est le suivant :
 - Le dernier nombre est le degré moyen de séparation du graphe en question
@@ -36,9 +46,13 @@ Ici, pour notre exemple, le degré moyen de sépration du graphe est 1,6. La pre
 Il est pratique de noter que dans le programme une **transformation** de la matrice est faîte ce qui la rend plus lisible. Dans notre cas la matrice deviendrai la suivante :
 
 00111
+
 00010
+
 10000
+
 11001
+
 10010
 
 Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
