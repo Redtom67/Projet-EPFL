@@ -13,6 +13,7 @@ En input une matrice d'adjacence aurait cette forme :
 
 P1
 55
+
 00001
 00010
 10000
