@@ -60,3 +60,7 @@ D'après cette matrice, si chaque colonne et ligne représente un noeud et chaqu
 
 ![propagatio 55](https://user-images.githubusercontent.com/111185446/189409269-3af06c14-ce56-4a41-9fe6-86782114792e.jpg)
 
+
+En première étape le noeud 0, en deuxième les noeuds 2-3-4 et en troisième le noeud 1.
+
+Concernant le degré moyen de séparation du graphe cela correspond à
