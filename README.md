@@ -41,3 +41,5 @@ Il est pratique de noter que dans le programme une **transformation** de la matr
 10010
 
 Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
+
+![propa](https://user-images.githubusercontent.com/111185446/189407331-6c25d7d8-9f41-479e-8138-29fc45edbcc9.jpg)
