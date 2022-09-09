@@ -57,3 +57,6 @@ Il est pratique de noter que dans le programme une **transformation** de la matr
 
 D'après cette matrice, si chaque colonne et ligne représente un noeud et chaque 1 représente une connection, le noeud 0 est connecté aux noeuds 2-3-4, le noeud 1 au noeud 3, le noeud 2 au noeud 0, le noeud 3 aux noeuds 0-1-4 et le noeud 4 au noeud 0. Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
 
+
+![propagatio 55](https://user-images.githubusercontent.com/111185446/189409269-3af06c14-ce56-4a41-9fe6-86782114792e.jpg)
+
