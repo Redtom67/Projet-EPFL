@@ -15,15 +15,15 @@ P1
 
 55
 
-00001
+0 0 0 0 1 
 
-00010
+0 0 0 1 0
 
-10000
+1 0 0 0 0 
 
-10001
+1 0 0 0 1
 
-10000
+1 0 0 0 0
 
 
 Le résultat du programme si on lui avait donné cet input serai : 
@@ -45,15 +45,15 @@ Ici, pour notre exemple, le degré moyen de sépration du graphe est 1,6. La pre
 
 Il est pratique de noter que dans le programme une **transformation** de la matrice est faîte ce qui la rend plus lisible. Dans notre cas la matrice deviendrai la suivante :
 
-00111
+0 0 1 1 1 
 
-00010
+0 0 0 1 0
 
-10000
+1 0 0 0 0
 
-11001
+1 1 0 0 1
 
-10010
+1 0 0 1 0
 
 D'après cette matrice, si chaque colonne et ligne représente un noeud et chaque 1 représente une connection, le noeud 0 est connecté aux noeuds 2-3-4, le noeud 1 au noeud 3, le noeud 2 au noeud 0, le noeud 3 aux noeuds 0-1-4 et le noeud 4 au noeud 0. Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
 ![propa 55 paint 3D fin](https://user-images.githubusercontent.com/111185446/189665104-f7857b2b-e19c-44d0-b6e7-ba1e6702c0c7.png)
