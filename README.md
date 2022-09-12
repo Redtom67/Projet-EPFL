@@ -1,13 +1,13 @@
 # Projet-EPFL
 Projet d'informatique pour l'EPFL, Propagatio
 
-**Présentation générale :**
+## Présentation générale :
 
 Ce projet est un programme de code c++ créé pour un problème d'informatique évalué lors de mon premier semestre à l'EPFL. Nommé Propagatio il a pour but d'évaluer la connexité d'un graphe sous forme Bitmap/Matrice d'adjacence et donner les étapes auquel les noeuds (en partant du 0) apartiennent si une information passait d'un noeud à un ou plusieurs autres une fois part unité de temps et ne pouvant pas revenir sur un noeud déjà visité. Et donne également le degré moyen de spération du graphe.
 
 Mon programme, comme stipulé dans l'énoncé du problème (dont je n'ai plus accès), est composé de 4 fonction principale servant chacune une tâche précise du projet, elles-mêmes regroupées dans une fonction globale permettant à la fonction main d’être complétement dénuée de variables. La **première tâche** composée d’une part de la détection éventuelle d’erreur dans l’input et d’autre part d’une fonction permettant la **transformation** de l’image pbm en matrice d’adjacence. La **seconde tâche** quant à elle, inclut une fonction qui génère les nœuds visité de la matrice sous forme de vecteur, nommé **connexe**, permettant à la tâche de déterminé si le graphe associé est connexe ou non. Les **tâches 3 et 4** utilisent une fonction commune qui donne le **degré de séparation** des nœuds, nommé **propagation**, au sein même de laquelle se trouve une fonction déterminant le **critère d’arrêt** à plusieurs endroits de la fonction principale, nommé **recursion**. Cela permet, à la **tâche 3** de donner l’ordre de passage des nœuds depuis le nœud zéro, et à la **tâche 4** de calculer le degré moyen de séparation du graphe. Les tâches 3 et 4 utilisent donc une même fonction dans laquelle une fonction auxiliaire est répétée.
 
-**Exemple et pratique :**
+## Exemple et pratique :
 
 En input une matrice d'adjacence aurait cette forme :
 
