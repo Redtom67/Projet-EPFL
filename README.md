@@ -57,6 +57,24 @@ Il est pratique de noter que dans le programme une **transformation** de la matr
 
 D'après cette matrice, si chaque colonne et ligne représente un noeud et chaque 1 représente une connection, le noeud 0 est connecté aux noeuds 2-3-4, le noeud 1 au noeud 3, le noeud 2 au noeud 0, le noeud 3 aux noeuds 0-1-4 et le noeud 4 au noeud 0. Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
 ![propa 55 paint 3D fin](https://user-images.githubusercontent.com/111185446/189665104-f7857b2b-e19c-44d0-b6e7-ba1e6702c0c7.png)
+fig.1
+
 En première étape le noeud 0, en deuxième les noeuds 2-3-4 et en troisième le noeud 1.
 
-Concernant le degré moyen de séparation du graphe cela correspond à
+Concernant le degré moyen de séparation du graphe cela correspond à la moyenne de : la moyenne des degrés de séparation des noeuds, en partant d'un noeud différent à chaque fois. Le degré de séparation d'un noeud étant l'étape à laquelle il se trouve dans la propagation de l'information depuis le noeud de départ, on peut trouver plusieurs noeuds à un même degré de séparation. La moyenne des degrés de séparation des noeuds, dépend ainsi du noeud de départ choisit, et, correspond pour ce noeud de départ à la distance moyenne à laquelle il est par rapport aux autres noeuds. Dans l'exemple précédent (voir fig.1), le noeud 0 est à un "pas" de trois noeuds et à deux "pas" d'un noeud, le dégré de séparation moyen des noeuds part rapport au noeud zéro est donc : 
+
+{(3 noeuds * à 1 pas / 4 noeuds au total)+( 1 noeud * à 2 pas / 4 noeuds au total)} = 1.25 pas nécessaire en moyenne à effectuer depuis le noeud zéro pour en trouver                                                                                         un autre
+
+Pour obtenir la moyenne de la moyenne des degrés de séparation des noeuds en partant d'un noeud différent à chaque fois, il suffit donc de calculer la moyenne des degrés de séparation des noeuds depuis chaque noeuds et de calculer la moyenne de la somme des moyennes des degrés de spération de chaque noeud de départ. Dans notre cas on devra calculer cinq fois la moyenne des degrés de séparation pour les cinq noeuds de départ différents, qui sont dans l'ordre croissant des noeuds :
+
+ - 1.25 pour le noeud 0
+ - 2 pour le noeud 1
+ - 2 pour le noeud 2
+ - 1.25 pour le noeud 3
+ - 1.5 pour le noeud 4
+
+La moyenne de ces moyennes des degrés de séparation des noeuds est donc :
+
+(1.25 + 2 + 2 + 1.25 + 1.5)/5 = 8/5 = 1.6
+
+Traduction du degré moyen de séparation du graphe ci-dessus (fig.1) : En partant de n'importe où dans le graphe il faudrat effectuer pour une information en moyenne 1.6 étapes pour atteindre tous les noeuds du graphes, une étape correspondant à une salve de "pas" possible depuis chaque noeud possédant l'information en une unité de temps. 
