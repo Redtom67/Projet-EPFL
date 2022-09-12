@@ -56,7 +56,7 @@ Il est pratique de noter que dans le programme une **transformation** de la matr
 10010
 
 D'après cette matrice, si chaque colonne et ligne représente un noeud et chaque 1 représente une connection, le noeud 0 est connecté aux noeuds 2-3-4, le noeud 1 au noeud 3, le noeud 2 au noeud 0, le noeud 3 aux noeuds 0-1-4 et le noeud 4 au noeud 0. Il est ainsi plus facile de comprendre le résultat obtenu car le graphe représenté par la matrice transformée est maintenant complétement lié. On peut donc suivre intuitivement le graphe pour obtenir les mêmes résultats que précédemment.
-![propa 55 rogné](https://user-images.githubusercontent.com/111185446/189657031-e4579937-9a40-4d27-90cf-4b2bc56fad3c.png)
+![propa 55 paint 3D fin](https://user-images.githubusercontent.com/111185446/189665104-f7857b2b-e19c-44d0-b6e7-ba1e6702c0c7.png)
 En première étape le noeud 0, en deuxième les noeuds 2-3-4 et en troisième le noeud 1.
 
 Concernant le degré moyen de séparation du graphe cela correspond à
